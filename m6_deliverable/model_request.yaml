@@ -1,0 +1,18 @@
+# Default model request
+
+# Customized model request
+type: meta_wa  # 'meta_naive', 'meta_lr'
+scorers:
+  - mase
+  - smape
+params:
+  preprocessors:
+    - type: dartsimputer
+    - type: minmaxscaler
+  base_models:
+    - type: darts_rnn
+      params:
+        model: LSTM
+        hidden_dim: 10
+        n_rnn_layers: 3
+    - type: darts_blockrnn
