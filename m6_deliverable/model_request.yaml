@@ -12,8 +12,10 @@ params:
         model: LSTM
         hidden_dim: 10
         n_rnn_layers: 3
-    - type: darts_blockrnn
-      # params:
-      #   model: LSTM
-      #   hidden_dim: 10
-      #   n_rnn_layers: 3    
+        random_state: 42
+    # - type: darts_blockrnn
+    #   params:
+    #     model: LSTM
+    #     hidden_dim: 10
+    #     n_rnn_layers: 3
+    #     random_state: 42
