@@ -1,0 +1,14 @@
+{
+    "type": "meta_wa",
+    "scorers": ["smape", "mase"],
+    "params": {
+        "preprocessors": [
+            {"type": "dartsimputer"},
+            {"type": "minmaxscaler"}
+        ],
+        "base_models": [
+            {"type": "darts_rnn", "params": {"model": "LSTM", "hidden_dim": 10, "n_rnn_layers": 3}},
+            {"type": "darts_blockrnn"}
+        ]
+    }
+}
