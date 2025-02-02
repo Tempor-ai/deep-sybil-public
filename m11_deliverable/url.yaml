@@ -1,5 +1,14 @@
-# The URL details is currently hidden from the public and is only available to the Deep SYBIL (D-SYBIL) and selected alpha users.
-# If you are interested in becoming a D-SYBIL alpha user, please reach out to Kevin R.C. <kevin@tempor.ai>.
-protocol: nan
-host: nan
-port: nan
+# Local
+# protocol: http
+# host: localhost
+# port: 8000
+
+# UAT
+protocol: https
+host: dsybil-test.tempor.ai
+port: 443
+
+# PROD
+# protocol: https
+# host: dsybil.tempor.ai
+# port: 443
